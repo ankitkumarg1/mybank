@@ -1,0 +1,19 @@
+             🏦 MyBank
+
+          🟢 MAIN ACTOR
+        ┌───────────────┐
+        │ UI State      │
+        │               │
+        │ Balance       │
+        │ Transactions  │
+        │ Loading       │
+        └───────┬───────┘
+                │
+          Controlled
+             access
+                │
+       ┌────────┴────────┐
+       │                 │
+      🌐 API          🧮 Work
+       │                 │
+    async/await      @concurrent
